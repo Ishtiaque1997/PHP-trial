@@ -21,11 +21,27 @@
   print"hello world";
   echo "<br>";
   
+  //data types. There are 8 type of data types.
+  //1. String 2. Integer 3. Float 4. Bolean 5. Array 6. Object 7. Null 8. Resource
+  $learn='learn hunter';
+  var_dump($learn);
+  echo "<br>";
+  $num=100.90;
+  var_dump($num);
+  echo "<br>";
+  $facet=false;
+  var_dump($facet);
+  echo "<br>";
+  $names=array('sakib','mahi','poli');
+  var_dump($names);
+  echo "<br>";
+  $cat;
+  var_dump($cat);
+  
+  
   //var_dump gives length, type of a variable
   var_dump($name);
   //print_r
 ?>
 </body>
-
-
 </html>

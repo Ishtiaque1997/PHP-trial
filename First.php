@@ -4,7 +4,13 @@
 </head>
 <body>
 <?php
-  print'Running first in php with xampp'
+  
+  $name='sakib';
+  $number=89;
+  $fact=true;
+  echo $name;
+ 
+  echo $number;
 
 ?>
 </body>

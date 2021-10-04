@@ -5,7 +5,7 @@
 <body>
 <?php
   //Assignment operator
-  //  = += -= /= *= %-
+  //  = += -= /= *= %=
   $a=10;
   $a +=20;//add and display
   echo $a;

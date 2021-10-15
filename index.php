@@ -1,49 +1,26 @@
-<!-- <?php
-$conn=mysqli_connect('localhost','root','','php');
+<?php
 
-if($conn==false){
- die("Error:could not connect".mysqli_connect_error());
-}
-$sql="INSERT INTO information(first_name,last_name,email) VALUES ('learn','hunter','avfr12@gmail.com'),
-('learn','hunter','avfr12@gmail.com'),
-('learn','hunter','avfr12@gmail.com'),
-('learn','hunter','avfr12@gmail.com')";
-
-if(mysqli_query($conn,$sql)){
-  echo 'data inserted properly';
+//make connection
+$connection=mysqli_connect('localhost','root','','php-first-practice');
+if($connection==false){
+  echo('Error:could not connect'.mysqli_connect_error());
 }
 else{
- echo'wrong';
+  // echo 'done with connection';
 }
-mysqli_close($conn);
-?> -->
 
-<?php
-$conn=mysqli_connect('localhost','root','','php');
-if($conn==false){
- die('Error:could not connect'.mysqli_connect_error());
+//inserting values
+$sql="INSERT INTO infos(first_name,last_name,email)
+VALUES('Ishitiaque','Ahmed','ishtiaque07031997@gmail.com')";
+
+if(mysqli_query($connection,$sql)){
+  echo'data inserted';
 }
-$sql="INSERT INTO "
+else{
+  echo 'something is wrong';
+}
 
-
-
+//close connection
+mysqli_close($connection);
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
